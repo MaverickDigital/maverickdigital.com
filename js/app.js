@@ -4,11 +4,18 @@
   $('#background-container video').attr('src', video);
 })();
 
+function toggleMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
 // HOMEPAGE
 if ( $('#home').length ) {
   (function(){
-
-
     $('#home #menu a').hover(
       (event) => {
         var video = 'http://www.maverickdigital.com' + $(event.target).parent().attr('vidsrc');
@@ -22,11 +29,9 @@ if ( $('#home').length ) {
   })();
 }
 
-function toggleMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+// Services
+if ( $('#services').length ) {
+  (function(){
+    new Foundation.Accordion($('.accordion'), {});
+  })();
 }
