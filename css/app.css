@@ -247,6 +247,17 @@ footer {
 /*
   Serices
 */
+#services .business {
+  padding: 0 0 100px 0;
+}
+#services .technology {
+  background: #FAFAFA;
+  padding: 100px 0;
+}
+#services .marketing {
+  background: #fff;
+  padding: 100px 0;
+}
 #services .accordion li a {
   background: #8C8F94;
   color: #fff;
