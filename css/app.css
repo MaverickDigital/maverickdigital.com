@@ -1,9 +1,15 @@
 html,
 body,
-.page,
-h1, h2, h3, h4, h5, h6, p, a{
+.page{
   display: block;
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body,
+.page,
+h1, h2, h3, h4, h5, h6, p, a{
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -48,7 +54,7 @@ header a.home{
   display: block;
   color: #222328;
   text-align: center;
-  padding: 14px 16px;
+  padding: 30px 20px;
   text-decoration: none;
   font-size: 14px;
   text-transform: uppercase;
@@ -72,7 +78,7 @@ header a.home{
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 639px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
@@ -81,7 +87,7 @@ header a.home{
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 639px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -96,7 +102,7 @@ header a.home{
 }
 
 .body-container {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 
 .body-container #background-container {
@@ -108,7 +114,12 @@ header a.home{
   background-color: #ffffff;
 }
 
-.body-container #background-container .video-background video{
+.body-container #background-container video{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
@@ -124,10 +135,11 @@ header a.home{
 
 footer {
   background: #222328;
-  position: fixed;
+  position: relative;
   bottom: 0;
   z-index: 2;
   width: 100%;
+  height: 84px;
 }
 
 /*
@@ -216,4 +228,18 @@ footer {
   position: relative;
   top: 50px;
   transform: translate(0, -50%);
+}
+
+/*
+  Key Peple
+*/
+#people .body-container h3{
+  color: #D8051D;
+  font-size: 14px;
+  font-weight: bold;
+}
+#people .body-container h4{
+  color: #747474;
+  font-size: 12px;
+  font-weight: bold;
 }
