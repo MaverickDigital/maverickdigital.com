@@ -1,13 +1,130 @@
 html,
 body,
-.page{
+.page,
+h1, h2, h3, h4, h5, h6, p, a{
   display: block;
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+header{
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  background: #fff;
+  z-index: 2;
+  width: 100%;
+}
+
+header a.home{
+  display: inline-block;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+  float: right;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #222328;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  border-bottom: 2px solid #D8051D;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.body-container {
+  padding-top: 100px;
+}
+
+.body-container #background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #ffffff;
+}
+
+.body-container #background-container .video-background video{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.grid-container{
+  position: relative;
 }
 
 footer {
   background: #222328;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   z-index: 2;
   width: 100%;
@@ -19,6 +136,9 @@ footer {
 #home{
   height: 100%;
   overflow-y: hidden;
+}
+#home header {
+  position: inherit;
 }
 #home header img {
   position: relative;
@@ -34,20 +154,19 @@ footer {
   overflow-y: hidden;
 }
 
-#home .body-container #background-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
 #home .body-container #background-container .video-background video{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -51%);
   min-width: 100%;
   min-height: 100%;
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
 }
 #home .body-container #menu {
   position: absolute;
@@ -72,7 +191,6 @@ footer {
   text-decoration: none;
   -webkit-box-shadow: none!important;
   box-shadow: none!important;
-  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 3.75rem;
@@ -80,4 +198,22 @@ footer {
 }
 #home .body-container #menu ul li a:hover{
   color: #f00;
+}
+
+
+/*
+  Work
+*/
+#work .body-container hr {
+  padding: 20px 0 0 0;
+  margin: 0 0 40px 0;
+}
+#work .body-container section div {
+  text-align: center;
+  height: 200px;
+}
+#work .body-container section div img{
+  position: relative;
+  top: 50px;
+  transform: translate(0, -50%);
 }

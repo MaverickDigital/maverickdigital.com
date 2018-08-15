@@ -8,14 +8,106 @@
     <link rel="stylesheet" href="../css/foundation.min.css">
     <link rel="stylesheet" href="../css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,400i,600,800" rel="stylesheet">
+
+    <link rel="preload" as="video" href="http://www.maverickdigital.com/wp-content/uploads/2018/08/about_720.mp4">
   </head>
   <body>
-    <div id="about" class="page">
-      <header></header>
+    <div id="work" class="page">
+      <header>
+        <div class="grid-container">
+          <a class="home" href="../home/index.html">
+            <img class="logo-desktop" src="../assets/logo/maverick_logo_black.svg" alt="Maverick Logo">
+          </a>
+          <div class="topnav" id="myTopnav">
+            <a href="">About</a>
+            <a href="">Serices</a>
+            <a href="">Work</a>
+            <a href="">Key People</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+              <img src="../assets/img/menu.svg" alt="Menu">
+            </a>
+          </div>
+        </div>
+      </header>
       <section class="body-container">
-        work
+        <section id="background-container"  vidsrc="/wp-content/uploads/2018/08/inner_720p.mp4">
+          <div class="video-background">
+            <video class="video--cover menu-video" poster="" src="" autoplay="" playsinline="" muted="" loop=""></video>
+          </div>
+        </section>
+
+        <div class="grid-container">
+          <h2>Our Clients</h2>
+          <p>Lorem upsum text place holder - Far and wide across the consumer packaged goods (CPG) and retail economy, digital disruption is forcing legacy brands to radically reevaluate how they view production, distribution, and consumption in the digital age. Distribution and sales models date back 100 years and incumbents are slowly adapting to the rise of “digital native” consumers. This consumer is a younger, more nuanced and tech-savvy demographic.</p>
+          <hr />
+          <section class="grid-x grid-padding-x" data-equalizer>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/VitaminWater.png" alt="Vitamin Water logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/Uniliver.png" alt="Uniliver logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/Tennant.png" alt="Tennant logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/Nascar.png" alt="Nascar logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/Motorola.png" alt="Vitamin Water logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/MiamiHeat.png" alt="Vitamin Water logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/McDonald.png" alt="Vitamin Water logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/Guinness.png" alt="Vitamin Water logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/GGP.png" alt="Vitamin Water logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/Diageo.png" alt="Vitamin Water logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/CocaCola.png" alt="Vitamin Water logo" />
+              </figure>
+            </div>
+            <div class="large-3 medium-4 small-12 cell">
+              <figure data-equalizer-watch>
+                <img src="../assets/clients/A.png" alt="Vitamin Water logo" />
+              </figure>
+            </div>
+          </section>
+        </div>
       </section>
       <footer>
+        footer
       </footer>
     </div>
 
@@ -23,7 +115,7 @@
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
   crossorigin="anonymous"></script>
-    <script src="../js/vendor/foundation.js"></script>
+    <script src="../js/foundation.min.js"></script>
     <script src="../js/app.js"></script>
   </body>
 </html>

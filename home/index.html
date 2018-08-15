@@ -24,39 +24,26 @@
         </a>
       </header>
       <section class="body-container">
-        <section id="background-container">
-          <div class="video-background default">
-            <!--<video id="videoBackgroundHome" class="video--cover menu-video" poster="" src="" autoplay="" playsinline="" muted="" loop=""></video>-->
-            <video id="videoBackgroundHome" class="video--cover menu-video" poster="" src="http://www.maverickdigital.com/wp-content/uploads/2018/08/default_720.mp4" autoplay="" playsinline="" muted="" loop=""></video>
-          </div>
-          <div class="video-background about" videoSrc="/wp-content/uploads/2018/08/about_720.mp4">
-            <video class="video--cover menu-video" poster="" src="" autoplay="" playsinline="" muted="" loop=""></video>
-          </div>
-          <div class="video-background services" videoSrc="/wp-content/uploads/2018/08/services_720.mp4">
-            <video class="video--cover menu-video" poster="" src="" autoplay="" playsinline="" muted="" loop=""></video>
-          </div>
-          <div class="video-background work" videoSrc="/wp-content/uploads/2018/08/work_720.mp4">
-            <video class="video--cover menu-video" poster="" src="" autoplay="" playsinline="" muted="" loop=""></video>
-          </div>
-          <div class="video-background people" videoSrc="/wp-content/uploads/2018/08/key_people_720.mp4">
+        <section id="background-container"  vidsrc="/wp-content/uploads/2018/08/default_720.mp4">
+          <div class="video-background">
             <video class="video--cover menu-video" poster="" src="" autoplay="" playsinline="" muted="" loop=""></video>
           </div>
         </section>
         <section id="menu">
           <ul>
-            <li>
-              <a video-class="about" href="../about/index.html">About</a>
+            <li vidsrc="/wp-content/uploads/2018/08/about_720.mp4">
+              <a href="../about/index.html">About</a>
             </li>
-            <li>
+            <li vidsrc="/wp-content/uploads/2018/08/services_720.mp4">
               <a video-class="services" href="../services/index.html">Services</a>
             </li>
-            <li>
+            <li vidsrc="/wp-content/uploads/2018/08/work_720.mp4">
               <a video-class="work" href="../work/index.html">Work</a>
             </li>
-            <li>
+            <li vidsrc="/wp-content/uploads/2018/08/key_people_720.mp4">
               <a video-class="people" href="../people/index.html">Key People</a>
             </li>
-            <li>
+            <li vidsrc="/wp-content/uploads/2018/08/default_720.mp4">
               <a video-class="default" href="../blog/index.html">Blog</a>
             </li>
           </ul>
@@ -71,7 +58,7 @@
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
   crossorigin="anonymous"></script>
-    <script src="../js/vendor/foundation.js"></script>
+    <script src="../js/foundation.min.js"></script>
     <script src="../js/app.js"></script>
   </body>
 </html>
