@@ -514,12 +514,24 @@ footer a.indeed {
   padding: 0 40px;
   max-width: 540px;
 }
+#people .callout {
+  margin-top: 20px;
+}
 
+#people .callout .line{
+  background: red;
+  display: block;
+  width: 5px;
+  height: 60px;
+  margin-right: 25px;
+  float: left;
+}
 /*
   Serices
 */
 #services .business {
-  padding: 0 0 100px 0;
+  padding: 100px 0 100px 0;
+  background: #fff;
 }
 #services .technology {
   background: #FAFAFA;
