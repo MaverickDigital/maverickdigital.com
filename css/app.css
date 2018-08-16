@@ -383,6 +383,18 @@ footer a.indeed {
   top: 0%;
   left: 27%;
 }
+
+#about .accordion-main-title {
+  color: #000;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#about .accordion li a {
+  background: #D62E41;
+  color: #fff;
+}
+
 #about .subscribe{
   background: #fff;
   padding: 70px 0;
@@ -519,7 +531,9 @@ footer a.indeed {
 #people .callout {
   margin-top: 20px;
 }
-
+#people .callout p{
+  font-weight: bold;
+}
 #people .callout .line{
   background: red;
   display: block;
