@@ -105,6 +105,8 @@ header a.home{
     position: relative;
     height: 100vh;
     width: 50%;
+    padding-top: 10px;
+    background-color: rgb(250,250,250);
   }
   .topnav.responsive a {
     float: none;
