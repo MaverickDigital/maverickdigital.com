@@ -491,6 +491,9 @@ footer a.indeed {
   font-size: 12px;
   font-weight: bold;
 }
+#people .body-container .cell{
+  padding: 0 40px;
+}
 
 /*
   Serices
@@ -510,6 +513,9 @@ footer a.indeed {
 /*
   Foundation overwrites
 */
+.grid-container{
+  max-width: 1600px;
+}
 .tooltip {
   background: #fff;
   color: #000;
