@@ -242,7 +242,9 @@ footer a.indeed {
   top: 30px;
   left: 50px;
 }
-
+#home footer {
+  position: absolute;
+}
 
 #home .body-container,
 #home .body-container #background-container,
