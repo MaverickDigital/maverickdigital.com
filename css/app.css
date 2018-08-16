@@ -277,8 +277,11 @@ footer a.indeed {
   background: #D62E41;
   color: #fff;
   padding: 40px 60px;
-  font-size: 14px;
+  font-family: "Droid Serif";
+  font-size: 18px;
   font-weight: bold;
+  font-style: italic;
+  line-height: 19px;
 }
 #about .callout i{
   font-size: 14px;
