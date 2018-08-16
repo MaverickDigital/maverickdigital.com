@@ -29,6 +29,16 @@ if ( $('#home').length ) {
   })();
 }
 
+// about
+if ( $('#about').length ) {
+  (function(){
+    new Foundation.Accordion($('.accordion'), {});
+    $('[data-tooltip]').each(function(i, v){
+      new Foundation.Tooltip($(v), {});
+    });
+  })();
+}
+
 // Services
 if ( $('#services').length ) {
   (function(){
