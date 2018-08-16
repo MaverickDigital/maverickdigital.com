@@ -223,6 +223,10 @@ footer a.indeed {
   footer a.home  {
     display: none;
   }
+  footer a {
+    padding: 30px 10px;
+    font-size: 12px;
+  }
 }
 
 /*
