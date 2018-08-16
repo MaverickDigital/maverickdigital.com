@@ -351,7 +351,7 @@ footer a.indeed {
 }
 
 #about .mission-statement p {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #about .mission{
@@ -602,6 +602,11 @@ footer a.indeed {
   border-color: #000;
   border-style: solid;
   border-width: 1px; 
+}
+
+#services .accordion li a {
+  background: #D62E41;
+  color: #fff;
 }
 
 /*
