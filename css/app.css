@@ -429,6 +429,7 @@ footer a.indeed {
   padding: 30px;
   color: #fff;
   margin-bottom: 30px;
+  max-width: 760px;
 }
 #blog article h2 a{
   font-size: 32px;
