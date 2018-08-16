@@ -211,6 +211,18 @@ footer a.indeed {
   text-indent: -999em;
 }
 
+@media screen and (max-width: 970px) {
+   footer a.blog  {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  footer a.home  {
+    display: none;
+  }
+}
+
 /*
   HOME
 */
