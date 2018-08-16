@@ -242,8 +242,8 @@ footer a.indeed {
   top: 30px;
   left: 50px;
 }
-#home footer {
-  position: absolute;
+.home footer {
+  position: fixed;
 }
 
 #home .body-container,
@@ -294,12 +294,24 @@ footer a.indeed {
   box-shadow: none!important;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: calc(3em + 1vw);;
+  font-size: calc(3em + 1vw);
   font-weight: 700;
 }
 #home .body-container #menu ul li a:hover{
   color: #f00;
 }
+
+@media screen and (max-width: 667px) {
+  #home header img {
+    width: 120px;
+    top: 10px;
+    left: 10px;
+  }
+  #home .body-container #menu ul li a{
+    font-size: 2.5em;
+  }
+}
+
 
 /*
   About
@@ -332,8 +344,18 @@ footer a.indeed {
 #about .about{
   padding: 0 0 70px 0;
 }
+
+#about .mission-statement {
+  background: rgba(250, 250, 250, 0.6);
+  padding: 70px 0;  
+}
+
+#about .mission-statement p {
+  font-size: 14px;
+}
+
 #about .mission{
-  background: #FAFAFA;
+  background: rgba(250, 250, 250, 0.6);
   padding: 70px 0;
 }
 #about .mission figure{
@@ -416,6 +438,7 @@ footer a.indeed {
   padding: 70px 0;
   text-align: center;
 }
+
 
 /*
   blog
@@ -543,7 +566,7 @@ footer a.indeed {
 }
 #people .body-container .cell{
   padding: 0 40px;
-  max-width: 540px;
+  max-width: 640px;
 }
 #people .callout {
   margin-top: 20px;
@@ -588,7 +611,7 @@ footer a.indeed {
   height: 19px;
   width: 320px;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 29px;
 }
 
