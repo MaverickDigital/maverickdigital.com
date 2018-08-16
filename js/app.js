@@ -2,6 +2,19 @@
 (function(){
   var video = 'http://www.maverickdigital.com' + $('#background-container').attr('vidsrc');
   $('#background-container video').attr('src', video);
+  // active topnav
+  var activeLink = $('#myTopnav a[href="' + document.location.href + '"]'),
+      allLinks = $('#myTopnav a');
+
+  activeLink.addClass('isActive');
+  allLinks.hover(
+    () => {
+      allLinks.removeClass('isActive');
+    },
+    () => {
+      activeLink.addClass('isActive');
+    }
+  );
 })();
 
 function toggleMenu() {
