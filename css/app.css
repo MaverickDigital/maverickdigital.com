@@ -229,12 +229,14 @@ footer a.indeed {
   left: 50px;
 }
 
+
 #home .body-container,
 #home .body-container #background-container,
 #home .body-container #background-container .video-background{
   display: block;
   height: 100%;
   overflow-y: hidden;
+  background-color: black;
 }
 
 #home .body-container #background-container .video-background video{
