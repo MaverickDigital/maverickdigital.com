@@ -292,7 +292,7 @@ footer a.indeed {
   box-shadow: none!important;
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 3.75rem;
+  font-size: calc(3em + 1vw);;
   font-weight: 700;
 }
 #home .body-container #menu ul li a:hover{
