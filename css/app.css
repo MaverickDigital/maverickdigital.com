@@ -232,9 +232,12 @@ footer a.indeed {
 /*
   HOME
 */
-#home{
+#home {
   height: 100%;
   overflow-y: hidden;
+}
+.home {
+    background-color: black;
 }
 #home header {
   position: inherit;
