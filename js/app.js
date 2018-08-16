@@ -5,11 +5,14 @@
 })();
 
 function toggleMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    var myTopnav = document.getElementById("myTopnav"),
+        myTopnav2 = document.getElementById("myTopnav2");
+    if (myTopnav.className === "topnav") {
+      myTopnav.className += " responsive";
+      myTopnav2.className += " responsive";
     } else {
-        x.className = "topnav";
+      myTopnav.className = "topnav";
+      myTopnav2.className = "topnav";
     }
 }
 

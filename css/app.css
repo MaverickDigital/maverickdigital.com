@@ -118,6 +118,12 @@ header a.home{
     top: 0;
     width: auto;
   }
+  #myTopnav2.responsive{
+    position: absolute;
+    right: 15px;
+    top: 0;
+    width: 70px;
+  }
 }
 
 .body-container {
