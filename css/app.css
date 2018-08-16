@@ -529,6 +529,11 @@ footer a.indeed {
   background: #fff;
   padding: 100px 0;
 }
+#services .accordion {
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px; 
+}
 
 /*
   Foundation overwrites
