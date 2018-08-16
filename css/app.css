@@ -236,10 +236,10 @@ footer a.indeed {
   position: inherit;
 }
 #home header img {
-  position: relative;
+  position: absolute;
   z-index: 2;
   width: 150px;
-  top: 60px;
+  top: 30px;
   left: 50px;
 }
 
