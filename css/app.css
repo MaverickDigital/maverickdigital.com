@@ -130,6 +130,19 @@ header a.home{
   padding-top: 90px;
 }
 
+@media screen and (min-width: 992px) {
+  .body-container {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .body-container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
 .body-container #background-container {
   position: fixed;
   top: 0;
@@ -496,6 +509,7 @@ footer a.indeed {
 }
 #people .body-container .cell{
   padding: 0 40px;
+  max-width: 540px;
 }
 
 /*
@@ -517,7 +531,7 @@ footer a.indeed {
   Foundation overwrites
 */
 .grid-container{
-  max-width: 1600px;
+  max-width: 1475px;
 }
 .tooltip {
   background: #fff;
