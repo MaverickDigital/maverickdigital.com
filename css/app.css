@@ -368,6 +368,10 @@ body.home footer {
   padding: 0 0 70px 0;
 }
 
+#about .about-us {
+  background: rgba(250, 250, 250, 0.6);  
+}
+
 #about .mission-statement {
   background: rgba(250, 250, 250, 0.6);
   padding: 70px 0;
