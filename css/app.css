@@ -570,6 +570,10 @@ body.home footer {
     padding: 30px 0 0;
   }
 }
+#blog_single article{
+  background: #fff;
+  padding: 20px;
+}
 
 #blog_single article,
 #blog_single article p{
@@ -605,10 +609,12 @@ body.home footer {
   display: inline-block;
   padding: 20px 0;
 }
-#blog_single .comments {
+#blog_single article .comments {
   float: right;
 }
-
+#blog_single div.comments {
+  width: 100%;
+}
 
 /*
   Work
