@@ -668,6 +668,10 @@ body.home footer {
 /*
   Serices
 */
+#services h2 {
+  position: relative;
+  top: -15px;
+}
 #services .business {
   padding: 100px 0 50px 0;
   background-color: rgba(255, 255, 255, 0.6);
