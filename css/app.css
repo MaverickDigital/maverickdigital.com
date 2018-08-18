@@ -712,6 +712,13 @@ body.home footer a {
   color: #fff;
 }
 
+#services ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+
+
 /*
   Contact Us
 */
