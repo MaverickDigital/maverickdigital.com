@@ -726,6 +726,10 @@ body.home footer a {
   color: #D8051D;
 }
 
+#contact .wpforms-submit {
+  background-color: #D62E41;
+  color: #fff;
+}
 
 
 /*
