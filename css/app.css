@@ -177,6 +177,7 @@ header a.home{
   transform: translate(-50%, -50%);
 
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: opacity(60%);
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
   -khtml-opacity: 0.6;
