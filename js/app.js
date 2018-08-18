@@ -29,6 +29,22 @@ function toggleMenu() {
     }
 }
 
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
 // HOMEPAGE
 if ( $('#home').length ) {
   (function(){
@@ -43,6 +59,49 @@ if ( $('#home').length ) {
       }
     );
   })();
+
+  // splash page
+  if ( '' === getCookie('maverickDigital') ) {
+    showSplash();
+  } else {
+    showHomepage();
+  }
+  // splash pahe
+  function showSplash() {
+    $('#loader').animate({
+      width: '100vw'
+    }, 5000);
+
+    $($('#intro p')[0]).fadeIn( "slow", () => {
+      $($('#intro p')[1]).fadeIn( "slow", () => {
+        setTimeout(() => {
+          $('#intro p').fadeOut( "slow", () => {
+            $('#splash img').fadeIn( "slow", () => {
+              setTimeout(() => {
+                showHomepage();
+              }, 1000);
+            });
+          });
+        }, 1000);
+      });
+    });
+  }
+  // homepage
+  function showHomepage() {
+    $('#splash').fadeOut( "slow", () => {
+      $('header img').fadeIn( "slow", () => {
+        $('#menu li').each((index, element) => {
+          setTimeout(() => {
+            $(element).animate({
+              opacity: 1,
+              top: 0
+            }, 500);
+          }, 250 * index);
+        });
+      });
+      $('footer').fadeIn( "slow", () => {});
+    });
+  }
 }
 
 // about
