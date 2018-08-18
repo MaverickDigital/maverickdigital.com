@@ -267,6 +267,11 @@ body.home {
 }
 body.home footer {
   position: fixed;
+  height: 60px;
+}
+
+body.home footer a {
+  padding: 20px 20px;
 }
 
 #home .body-container,
