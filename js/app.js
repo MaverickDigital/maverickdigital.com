@@ -8,10 +8,10 @@
 
   activeLink.addClass('isActive');
   allLinks.hover(
-    () => {
+    function() {
       allLinks.removeClass('isActive');
     },
-    () => {
+    function() {
       activeLink.addClass('isActive');
     }
   );
@@ -33,11 +33,11 @@ function toggleMenu() {
 if ( $('#home').length ) {
   (function(){
     $('#home #menu a').hover(
-      (event) => {
+      function(event) {
         var video = 'http://www.maverickdigital.com' + $(event.target).parent().attr('vidsrc');
         $('#background-container video').attr('src', video);
       },
-      (event) => {
+      function(event) {
         var video = 'http://www.maverickdigital.com' + $('#background-container').attr('vidsrc');
         $('#background-container video').attr('src', video);
       }
@@ -57,12 +57,12 @@ if ( $('#home').length ) {
       width: '100vw'
     }, 5000);
 
-    $($('#intro p')[0]).fadeIn( "slow", () => {
-      $($('#intro p')[1]).fadeIn( "slow", () => {
-        setTimeout(() => {
-          $('#intro p').fadeOut( "slow", () => {
-            $('#splash img').fadeIn( "slow", () => {
-              setTimeout(() => {
+    $($('#intro p')[0]).fadeIn( "slow", function() {
+      $($('#intro p')[1]).fadeIn( "slow", function() {
+        setTimeout(function() {
+          $('#intro p').fadeOut( "slow", function() {
+            $('#splash img').fadeIn( "slow", function() {
+              setTimeout(function() {
                 showHomepage();
               }, 1000);
             });
@@ -73,10 +73,10 @@ if ( $('#home').length ) {
   }
   // homepage
   function showHomepage() {
-    $('#splash').fadeOut( "slow", () => {
-      $('header img').fadeIn( "slow", () => {
-        $('#menu li').each((index, element) => {
-          setTimeout(() => {
+    $('#splash').fadeOut( "slow", function() {
+      $('header img').fadeIn( "slow", function() {
+        $('#menu li').each(function(index, element) {
+          setTimeout(function() {
             $(element).animate({
               opacity: 1,
               top: 0
@@ -84,7 +84,7 @@ if ( $('#home').length ) {
           }, 250 * index);
         });
       });
-      $('footer').fadeIn( "slow", () => {});
+      $('footer').fadeIn( "slow", function() {});
     });
   }
 }
