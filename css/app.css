@@ -690,6 +690,10 @@ body.home footer a {
   display: block;
   padding: 0 0 10px 0;
 }
+#blog_single .tags {
+  display: block;
+  padding: 20px 0 0 0;
+}
 #blog_single div.comments {
   width: 100%;
 }
