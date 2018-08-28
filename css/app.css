@@ -791,6 +791,30 @@ body.home footer a {
   color: #fff;
 }
 
+/*
+  Other Content Pages, such as jobs
+*/
+#content h1 a{
+  font-size: 42px;
+  font-weight: bold;
+  color: #000;
+}
+
+#content h1 {
+  text-align: left;
+}
+
+/*
+  job page
+*/
+#job-list-header {
+  position: relative;
+  width: ;
+}
+
+#job-detail-header {
+  visibility: hidden;
+}
 
 /*
   Foundation overwrites
