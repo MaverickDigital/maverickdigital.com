@@ -545,6 +545,15 @@ body.home footer a {
   margin-bottom: 30px;
   max-width: 760px;
 }
+#blog article > a{
+  float: left;
+  padding-right: 20px;
+}
+#blog article h2{
+  line-height: 1;
+  position: relative;
+  top: -15px;
+}
 #blog article h2 a{
   font-size: 32px;
   color: #fff;
@@ -554,15 +563,22 @@ body.home footer a {
   display: block;
   color: #B3B3B3;
   font-size: 12px;
+  clear: both;
 }
-#blog article .author,
 #blog article .comments{
-  display: none;
+  float: right;
+}
+@media screen and (max-width: 800px) {
+  #blog article .comments{
+    float: none;
+    display: block;
+  }
 }
 #blog article p{
   font-size: 14px;
   line-height: 26px;
-  padding: 25px 0;
+  padding: 25px 0 0 0;
+  margin-bottom: 0;
 }
 #blog article p a{
   display: table;
@@ -635,7 +651,7 @@ body.home footer a {
   }
 }
 #blog_single article{
-  background: #fff;
+  background: rgba(255, 255, 255, 0.6);
   padding: 20px;
 }
 
@@ -670,11 +686,8 @@ body.home footer a {
 
 #blog_single .author,
 #blog_single .comments {
-  display: inline-block;
-  padding: 20px 0;
-}
-#blog_single article .comments {
-  float: right;
+  display: block;
+  padding: 0 0 10px 0;
 }
 #blog_single div.comments {
   width: 100%;
@@ -711,7 +724,8 @@ body.home footer a {
   font-weight: bold;
 }
 #people .body-container .cell{
-  padding: 0 40px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 40px;
   max-width: 640px;
 }
 #people .callout {
@@ -767,6 +781,14 @@ body.home footer a {
 #services ul li {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+}
+
+/*
+  careers
+*/
+#careers .grid-container {
+  background: rgba(250, 250, 250, 0.6);
+  padding: 20px;
 }
 
 
