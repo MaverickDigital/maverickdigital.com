@@ -231,6 +231,11 @@ footer a.indeed {
   text-indent: -999em;
 }
 
+.stickyFooter footer {
+  position: fixed;
+  bottom: 0;
+}
+
 @media screen and (max-width: 970px) {
    footer a.blog  {
     display: none;
