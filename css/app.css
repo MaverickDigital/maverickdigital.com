@@ -611,6 +611,15 @@ body.home footer a {
   border-radius: 0;
   color: #0a0a0a;
 }
+
+@media screen and (max-width: 639px) {
+  .post_thumbnail {
+    visibility: hidden;
+    display: none;
+  } 
+}
+
+
 #blog .widget_recent_entries,
 #blog .widget_categories,
 #blog .widget_tag_cloud,
