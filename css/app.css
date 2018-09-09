@@ -544,7 +544,11 @@ body.home footer a {
   padding-left: 3rem;
 }
 #blog article{
+  background-color: rgba(0, 0, 0, 0.6);
   background-image: url('../assets/img/bg-blog.png');
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-size: cover;
   padding: 30px;
   color: #fff;
   margin-bottom: 30px;
